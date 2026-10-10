@@ -5,15 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GeoExpert | Geodetske usluge u Podgorici</title>
   <meta name="description" content="GeoExpert, Podgorica: legalizacija objekata, dioba parcela, geodetske podloge i upis u katastar. Više od 13 godina iskustva.">
-  <meta name="theme-color" content="#10243a">
+  <meta name="theme-color" content="#ffffff">
   <meta property="og:type" content="website">
   <meta property="og:title" content="GeoExpert | Geodetske usluge u Podgorici">
   <meta property="og:description" content="GeoExpert, Podgorica: legalizacija objekata, dioba parcela, geodetske podloge i upis u katastar. Više od 13 godina iskustva.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="main.js" defer></script>
   <script type="application/ld+json">
@@ -60,9 +57,9 @@
 <a class="skip" href="#main">Pređi na sadržaj</a>
 
 <header class="site-header">
-  <div class="wrap bar">
+  <div class="bar">
     <a class="logo" href="index.html"><img src="assets/logo.svg" alt="GeoExpert" width="147" height="48"></a>
-    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Meni</button>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav"><span class="sr-only">Meni</span><span class="burger" aria-hidden="true"></span></button>
     <nav id="nav" class="site-nav" aria-label="Glavna navigacija">
       <a href="index.html" aria-current="page">Početna</a>
       <a href="o-nama.html">O nama</a>
@@ -75,17 +72,17 @@
 
 <main id="main">
   <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <h1>Geodetski stručnjaci sa više od 13 godina iskustva</h1>
-        <p class="lead">Vaš pouzdan partner u katastarskim uslugama: legalizacija objekata, dioba parcela, geodetske podloge i upis u katastar.</p>
-        <div class="actions">
-          <a class="btn" href="kontakt.html">Zatražite ponudu</a>
-          <a class="btn ghost" href="usluge.html">Pogledajte usluge</a>
-        </div>
-        <p class="hero-call">Ili pozovite <a href="tel:+38268007108">+382 68 007 108</a>, radnim danima od 08 do 16 časova.</p>
+    <div class="wrap hero-intro">
+      <h1>Geodetski stručnjaci sa više od 13 godina iskustva</h1>
+      <p class="lead">Vaš pouzdan partner u katastarskim uslugama: legalizacija objekata, dioba parcela, geodetske podloge i upis u katastar.</p>
+      <div class="actions center">
+        <a class="btn" href="kontakt.html">Zatražite ponudu</a>
+        <a class="more" href="usluge.html">Pogledajte usluge</a>
       </div>
-      <figure class="hero-plan">
+      <p class="hero-call">Ili pozovite <a href="tel:+38268007108">+382 68 007 108</a>, radnim danima od 08 do 16 časova.</p>
+    </div>
+    <figure class="showcase">
+      <div class="plan-mask">
   <svg class="plan" viewBox="0 0 640 540" role="img" aria-label="Crtež katastarskog plana: parcela snimljena sa dva stajališta na ulici, sa izračunatom površinom.">
     <defs>
       <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
@@ -142,84 +139,100 @@
       </g>
     </g>
   </svg>
-      </figure>
-    </div>
+      </div>
+    </figure>
   </section>
 
-  <section class="process">
-    <div class="wrap">
-      <div class="process-panel">
-        <h2>Kako radimo</h2>
-        <ol class="steps">
-          <li><h3>Razgovor i pregled dokumentacije</h3><p>Utvrđujemo šta vam je potrebno i šta već imate.</p></li>
-          <li><h3>Snimanje na terenu</h3><p>Mjerimo i obilježavamo parcelu ili objekat.</p></li>
-          <li><h3>Izrada elaborata</h3><p>Pripremamo dokumentaciju u skladu sa propisima.</p></li>
-          <li><h3>Predaja katastru</h3><p>Pratimo postupak do upisa u evidenciju.</p></li>
-        </ol>
-      </div>
+  <section class="section tint">
+    <div class="wrap wide">
+      <div class="head reveal"><h2>Kako radimo</h2></div>
+      <ol class="steps reveal">
+        <li class="card"><h3>Razgovor i pregled dokumentacije</h3><p>Utvrđujemo šta vam je potrebno i šta već imate.</p></li>
+        <li class="card"><h3>Snimanje na terenu</h3><p>Mjerimo i obilježavamo parcelu ili objekat.</p></li>
+        <li class="card"><h3>Izrada elaborata</h3><p>Pripremamo dokumentaciju u skladu sa propisima.</p></li>
+        <li class="card"><h3>Predaja katastru</h3><p>Pratimo postupak do upisa u evidenciju.</p></li>
+      </ol>
     </div>
   </section>
 
   <section class="section">
-    <div class="wrap">
-      <div class="section-head">
+    <div class="wrap wide">
+      <div class="head-row reveal">
         <h2>Čime se bavimo</h2>
-        <p><a class="text-link" href="usluge.html">Sve usluge</a></p>
+        <p><a class="more" href="usluge.html">Sve usluge</a></p>
       </div>
-      <ul class="service-grid">
+      <ul class="tiles reveal">
         <li>
-          <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 15 16 6l11 9"/><path d="M8 13v13h16V13"/><path class="a" d="m12 20 3 3 6-7"/></svg>
-          <h3>Legalizacija objekata</h3>
-          <p>Geodetski snimak i elaborat za legalizaciju izgrađenih objekata.</p>
+          <a class="tile card" href="usluge.html#legalizacija">
+            <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 15 16 6l11 9"/><path d="M8 13v13h16V13"/><path class="a" d="m12 20 3 3 6-7"/></svg>
+            <h3>Legalizacija objekata</h3>
+            <p>Geodetski snimak i elaborat za legalizaciju izgrađenih objekata.</p>
+            <span class="more" aria-hidden="true">Saznajte više</span>
+          </a>
         </li>
         <li>
-          <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="16" rx="12.5" ry="9" transform="rotate(-16 16 16)"/><ellipse cx="16.5" cy="16" rx="7.5" ry="5" transform="rotate(-16 16 16)"/><circle class="af" cx="17" cy="16" r="1.8"/></svg>
-          <h3>Izrada geodetskih podloga za projektovanje</h3>
-          <p>Ažurne podloge sa terenskim snimanjem za izradu projektne dokumentacije.</p>
+          <a class="tile card" href="usluge.html#podloge">
+            <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="16" rx="12.5" ry="9" transform="rotate(-16 16 16)"/><ellipse cx="16.5" cy="16" rx="7.5" ry="5" transform="rotate(-16 16 16)"/><circle class="af" cx="17" cy="16" r="1.8"/></svg>
+            <h3>Izrada geodetskih podloga za projektovanje</h3>
+            <p>Ažurne podloge sa terenskim snimanjem za izradu projektne dokumentacije.</p>
+            <span class="more" aria-hidden="true">Saznajte više</span>
+          </a>
         </li>
         <li>
-          <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 8 26 6l1 19-21 1z"/><path class="a" stroke-dasharray="3 3" d="m15.5 7 1 18.5"/></svg>
-          <h3>Dioba parcela</h3>
-          <p>Podjela katastarske parcele na više parcela, sa elaboratom za upis u katastar.</p>
+          <a class="tile card" href="usluge.html#dioba">
+            <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 8 26 6l1 19-21 1z"/><path class="a" stroke-dasharray="3 3" d="m15.5 7 1 18.5"/></svg>
+            <h3>Dioba parcela</h3>
+            <p>Podjela katastarske parcele na više parcela, sa elaboratom za upis u katastar.</p>
+            <span class="more" aria-hidden="true">Saznajte više</span>
+          </a>
         </li>
         <li>
-          <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 11 14 9l1 15-10 2z"/><path d="m14 9 14-2-1 15-12 2"/><rect class="a" x="8" y="5" width="16" height="22"/></svg>
-          <h3>Kompletiranje urbanističke parcele</h3>
-          <p>Formiranje urbanističke parcele od jedne ili više katastarskih parcela.</p>
+          <a class="tile card" href="usluge.html#kompletiranje">
+            <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 11 14 9l1 15-10 2z"/><path d="m14 9 14-2-1 15-12 2"/><rect class="a" x="8" y="5" width="16" height="22"/></svg>
+            <h3>Kompletiranje urbanističke parcele</h3>
+            <p>Formiranje urbanističke parcele od jedne ili više katastarskih parcela.</p>
+            <span class="more" aria-hidden="true">Saznajte više</span>
+          </a>
         </li>
         <li>
-          <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="8" y="5" width="16" height="22"/><path class="a" d="M8 12.5h16M8 19.5h16"/><path d="M14 27v-4h4v4"/></svg>
-          <h3>Etažna razrada objekta</h3>
-          <p>Određivanje posebnih djelova objekta (stanova, lokala) za upis etažne svojine.</p>
+          <a class="tile card" href="usluge.html#etazna">
+            <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="8" y="5" width="16" height="22"/><path class="a" d="M8 12.5h16M8 19.5h16"/><path d="M14 27v-4h4v4"/></svg>
+            <h3>Etažna razrada objekta</h3>
+            <p>Određivanje posebnih djelova objekta (stanova, lokala) za upis etažne svojine.</p>
+            <span class="more" aria-hidden="true">Saznajte više</span>
+          </a>
         </li>
         <li>
-          <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M7 9h12v6h6v9H7z"/><g class="af"><circle cx="7" cy="9" r="2"/><circle cx="19" cy="9" r="2"/><circle cx="25" cy="15" r="2"/><circle cx="25" cy="24" r="2"/><circle cx="7" cy="24" r="2"/></g></svg>
-          <h3>Snimanje objekata i uknjižba u katastar</h3>
-          <p>Snimanje izgrađenog objekta i priprema dokumentacije za upis u katastar nepokretnosti.</p>
+          <a class="tile card" href="usluge.html#snimanje">
+            <svg class="icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M7 9h12v6h6v9H7z"/><g class="af"><circle cx="7" cy="9" r="2"/><circle cx="19" cy="9" r="2"/><circle cx="25" cy="15" r="2"/><circle cx="25" cy="24" r="2"/><circle cx="7" cy="24" r="2"/></g></svg>
+            <h3>Snimanje objekata i uknjižba u katastar</h3>
+            <p>Snimanje izgrađenog objekta i priprema dokumentacije za upis u katastar nepokretnosti.</p>
+            <span class="more" aria-hidden="true">Saznajte više</span>
+          </a>
         </li>
       </ul>
     </div>
   </section>
 
-  <section class="section alt">
-    <div class="wrap split">
-      <div>
+  <section class="section tint">
+    <div class="wrap wide">
+      <div class="statement reveal">
         <h2>Više od 13 godina vodimo klijente od prvog mjerenja do upisa u katastar</h2>
         <p>Geodetski poslovi često su dio većeg procesa: gradnje, legalizacije, prodaje ili razrješenja imovinskih odnosa. Zato ne pružamo samo mjerenje, već vodimo klijenta kroz cijeli postupak i objašnjavamo svaki korak.</p>
-        <p><a class="text-link" href="o-nama.html">Više o nama</a></p>
+        <p><a class="more" href="o-nama.html">Više o nama</a></p>
       </div>
-      <ul class="rows">
-        <li><h3>Tačnost</h3><p>Svako mjerenje provjeravamo prije nego što postane dio elaborata.</p></li>
-        <li><h3>Jasna komunikacija</h3><p>Unaprijed znate šta je potrebno, koliko traje i šta slijedi.</p></li>
-        <li><h3>Poštovanje rokova</h3><p>Rokove dogovaramo realno i držimo ih.</p></li>
+      <ul class="values reveal">
+        <li class="card"><h3>Tačnost</h3><p>Svako mjerenje provjeravamo prije nego što postane dio elaborata.</p></li>
+        <li class="card"><h3>Jasna komunikacija</h3><p>Unaprijed znate šta je potrebno, koliko traje i šta slijedi.</p></li>
+        <li class="card"><h3>Poštovanje rokova</h3><p>Rokove dogovaramo realno i držimo ih.</p></li>
       </ul>
     </div>
   </section>
 
   <section class="section">
-    <div class="wrap">
-      <div class="section-head"><h2>Povjerili su nam se</h2></div>
-      <ul class="logos">
+    <div class="wrap wide">
+      <div class="head reveal"><h2>Povjerili su nam se</h2></div>
+      <ul class="logos reveal">
         <li><img src="assets/clients/petrol-logo.png" alt="Petrol" width="225" height="225" loading="lazy"></li>
         <li><img src="assets/clients/portonovi-logo-trimmed.jpg" alt="Portonovi Montenegro" width="480" height="285" loading="lazy"></li>
         <li><img src="assets/clients/roksped-logo.png" alt="Rokšped Podgorica" width="225" height="225" loading="lazy"></li>
@@ -230,23 +243,21 @@
   </section>
 
   <section class="cta">
-    <div class="wrap cta-grid">
-      <div>
-        <h2>Imate parcelu ili objekat koji treba urediti?</h2>
-        <p>Opišite nam situaciju. Javićemo se i reći koja dokumentacija je potrebna.</p>
-      </div>
-      <div class="actions">
+    <div class="cta-tile reveal">
+      <h2>Imate parcelu ili objekat koji treba urediti?</h2>
+      <p>Opišite nam situaciju. Javićemo se i reći koja dokumentacija je potrebna.</p>
+      <div class="actions center">
         <a class="btn light" href="kontakt.html">Zatražite ponudu</a>
-        <a class="btn ghost" href="tel:+38268007108"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>+382 68 007 108</a>
+        <a class="btn on-dark" href="tel:+38268007108"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>+382 68 007 108</a>
       </div>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
-  <div class="wrap foot">
+  <div class="wrap wide foot">
     <div class="f-brand">
-      <a class="logo" href="index.html"><img src="assets/logo-light.svg" alt="GeoExpert" width="159" height="52" loading="lazy"></a>
+      <a class="logo" href="index.html"><img src="assets/logo.svg" alt="GeoExpert" width="147" height="48" loading="lazy"></a>
       <p>Geodetske i katastarske usluge u Podgorici i cijeloj Crnoj Gori.</p>
     </div>
     <nav aria-label="Stranice">
@@ -271,7 +282,7 @@
       </dl>
     </div>
   </div>
-  <div class="wrap legal"><small>© <span id="year">2026</span> GeoExpert</small></div>
+  <div class="wrap wide legal"><small>© <span id="year">2026</span> GeoExpert</small></div>
 </footer>
 </body>
 </html>
