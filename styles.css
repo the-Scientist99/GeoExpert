@@ -292,6 +292,10 @@ a.more:hover { text-decoration: underline; }
 /* Cards are grey on white sections and white on grey ones. */
 .card { background: var(--bg-2); border-radius: var(--r-md); }
 .tint .card { background: #fff; }
+/* Steps and values are the brand moments: orange cards with white text on any section
+   (white on --accent is 6:1). */
+.steps .card,
+.values .card { color: #fff; background: var(--accent); }
 
 .head { max-width: 44rem; margin: 0 auto clamp(2.5rem, 5vw, 3.5rem); text-align: center; }
 .head-row {
@@ -329,11 +333,11 @@ a.more:hover { text-decoration: underline; }
   margin-bottom: 2rem;
   font: 700 2.75rem/1 var(--font-display);
   letter-spacing: -0.03em;
-  color: var(--accent);
+  color: #fff;
   font-variant-numeric: tabular-nums;
 }
 .steps h3 { font-size: 1.1875rem; }
-.steps p { margin: 0.5rem 0 0; color: var(--text-2); font-size: 1rem; }
+.steps p { margin: 0.5rem 0 0; color: rgba(255, 255, 255, 0.88); font-size: 1rem; }
 
 /* ---------- Service tiles (home) ---------- */
 
@@ -367,7 +371,7 @@ a.more:hover { text-decoration: underline; }
 .head + .values { margin-top: 0; }
 .values li { padding: 2rem 1.75rem; }
 .values h3 { margin-bottom: 0.5rem; }
-.values p { margin: 0; color: var(--text-2); }
+.values p { margin: 0; color: rgba(255, 255, 255, 0.88); }
 
 /* ---------- Clients ---------- */
 
